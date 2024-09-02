@@ -1,23 +1,23 @@
-$descktop-above: 1281px;
-$descktop: 1280px;
+$desktop-above: 1280px;
+$desktop: 1280px;
 
-$tablet-above: 1024px;
+$tablet-above: 1023px;
 $tablet: 1023px;
 
-$mobile-above: 768px;
+$mobile-above: 767px;
 $mobile: 767px;
 
-$mobile-s-above: 481px;
+$mobile-s-above: 480px;
 $mobile-s: 480px;
 
 @mixin desktop {
-	@media (max-width: $descktop) {
+	@media (max-width: $desktop) {
 		@content;
 	}
 }
 
-@mixin descktop-above {
-	@media (min-width: $descktop-above) {
+@mixin desktop-above {
+	@media (min-width: $desktop-above) {
 		@content;
 	}
 }
